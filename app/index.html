@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>TDN</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="header__search">
+          <input type="text" placeholder="Поиск">
+          <button type="submit"></button>
+        </div>
+        <div class="header__location">
+          <div class="header__location-selection">Выберите филиал:</div>
+          <div class="header__location-city">
+            <a href="#">г. Владивосток</a>
+          </div>
+        </div>
+        <div class="header__phone">
+          <div class="header__phone-call">+7 (123) 456-78-90</div>
+          <div class="header__phone-call">+7 (123) 456-78-90</div>
+        </div>
+        <a class="header__feedback" href="mailto:company@mail.com">
+          <img src="images/mail.png" alt="">
+          <div>Написать нам</div>
+        </a>
+      </div>
+    </div>
+    <nav class="header__menu">
+      <div class="container">
+        <ul>
+          <li>
+            <a class="header__feedback" href="#">
+              <img src="images/icons/list.png" alt="">
+              <div>Каталог</div>
+            </a>
+          </li>
+          <li><a href="#">Молочная продукция</a></li>
+          <li><a href="#">Мясная продукция</a></li>
+          <li><a href="#">Напитки</a></li>
+          <li><a href="#">Бакалея</a></li>
+          <li><a href="#">Грибы</a></li>
+          <li><a href="#">Крупы</a></li>
+          <li><a href="#">Овощи</a></li>
+          <li><a href="#">Ягоды</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <section class="header__slider">
+    <div class="container-fluid">
+      <div class="header__slider-inner">
+        <div class="header__slider-item">
+          <img src="images/products/product1.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="circle__slider">
+
+  </section>
+
+
+
+  <section class="popular-slider">
+    <div class="container">
+
+      <div class="slider__title">
+        <div class="slider__title-name ">
+          <h2>Популярные категории</h2>
+        </div>
+        <a class="slider__title-link" href="#">
+          Смотреть все
+        </a>
+      </div>
+
+      <div class="popular-slider__inner">
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/milk.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Молочная продукция
+          </div>
+        </a>
+
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/berries.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Ягоды
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/vegatables.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Овощи
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/eat.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Мясная продукция
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/milk.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Молочная продукция
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/berries.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Ягоды
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/vegatables.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Овощи
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/eat.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Мясная продукция
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="sale-slider">
+    <div class="container">
+
+      <div class="slider__title">
+        <div class="slider__title-name ">
+          <h2>Акционные товары</h2>
+        </div>
+        <div class="slider__title-link ">
+          <a href="#">Смотреть все</a>
+        </div>
+      </div>
+
+      <div class="sale-slider__inner">
+        <div>
+          <div class="sale-slider__item">
+            <div class="sale-slider__item-content">
+              <div class="title">Малина свежемороженая</div>
+              <div class="text">
+                <p> Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и противовоспалительным
+                  эффектом, богата железом, медью и витаминами А, Е, РР, В2. На производстве используется технология
+                  шоковой заморозки, что позволяет сохранить вкус, аромат и пользу свежих ягод. В свежем виде эта ягода
+                  – настоящее лакомство. Кроме того с ней можно готовить различные десерты и пироги.</p>
+              </div>
+              <div class="product-price">
+                <div class="product-price__sale">
+                  250 ₽/кг
+                </div>
+                <div class="product-price__regular">
+                  <s>350 ₽/кг</s>
+                </div>
+              </div>
+              <div class="content__links">
+                <a class="content__links-purple" href="#">В корзину</a>
+                <a class="content__links-white" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="sale-slider__item-img">
+              <img src="images/products/berries-big.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sale-slider__item">
+            <div class="sale-slider__item-content">
+              <div class="title">Малина свежемороженая</div>
+              <div class="text">
+                <p> Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и противовоспалительным
+                  эффектом, богата железом, медью и витаминами А, Е, РР, В2. На производстве используется технология
+                  шоковой заморозки, что позволяет сохранить вкус, аромат и пользу свежих ягод. В свежем виде эта ягода
+                  – настоящее лакомство. Кроме того с ней можно готовить различные десерты и пироги.</p>
+              </div>
+              <div class="product-price">
+                <div class="product-price__sale">
+                  250 ₽/кг
+                </div>
+                <div class="product-price__regular">
+                  <s>350 ₽/кг</s>
+                </div>
+              </div>
+              <div class="content__links">
+                <a class="content__links-purple" href="#">В корзину</a>
+                <a class="content__links-white" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="sale-slider__item-img">
+              <img src="images/products/berries-big.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sale-slider__item">
+            <div class="sale-slider__item-content">
+              <div class="title">Малина свежемороженая</div>
+              <div class="text">
+                <p> Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и противовоспалительным
+                  эффектом, богата железом, медью и витаминами А, Е, РР, В2. На производстве используется технология
+                  шоковой заморозки, что позволяет сохранить вкус, аромат и пользу свежих ягод. В свежем виде эта ягода
+                  – настоящее лакомство. Кроме того с ней можно готовить различные десерты и пироги.</p>
+              </div>
+              <div class="product-price">
+                <div class="product-price__sale">
+                  250 ₽/кг
+                </div>
+                <div class="product-price__regular">
+                  <s>350 ₽/кг</s>
+                </div>
+              </div>
+              <div class="content__links">
+                <a class="content__links-purple" href="#">В корзину</a>
+                <a class="content__links-white" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="sale-slider__item-img">
+              <img src="images/products/berries-big.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="sale-slider__item">
+            <div class="sale-slider__item-content">
+              <div class="title">Малина свежемороженая</div>
+              <div class="text">
+                <p> Малина – очень вкусная и ароматная ягода. Она обладает жаропонижающим и противовоспалительным
+                  эффектом, богата железом, медью и витаминами А, Е, РР, В2. На производстве используется технология
+                  шоковой заморозки, что позволяет сохранить вкус, аромат и пользу свежих ягод. В свежем виде эта ягода
+                  – настоящее лакомство. Кроме того с ней можно готовить различные десерты и пироги.</p>
+              </div>
+              <div class="product-price">
+                <div class="product-price__sale">
+                  250 ₽/кг
+                </div>
+                <div class="product-price__regular">
+                  <s>350 ₽/кг</s>
+                </div>
+              </div>
+              <div class="content__links">
+                <a class="content__links-purple" href="#">В корзину</a>
+                <a class="content__links-white" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="sale-slider__item-img">
+              <img src="images/products/berries-big.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-company">
+    <div class="container">
+      <div class="about-company__title">
+        <div class="slider__title-name ">
+          <h2>О компании</h2>
+        </div>
+      </div>
+      <div class="about-company__content">
+        <div class="about-company__text">
+          <p>Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры обеспечивает широкому кругу
+            (специалистов) участие в формировании модели развития. Экономическая повестка сегодняшнего дня прекрасно
+            подходит для реализации экономической целесообразности принимаемых решений. Как принято считать,
+            предприниматели в сети интернет формируют глобальную экономическую сеть и при этом - разоблачены!</p>
+        </div>
+        <div class="about-company__items">
+          <div class="about-company__item">
+            <div class="about-company__item-img">
+              <img src="images/icons/like.png" alt="">
+            </div>
+            <div class="about-company__item-text">
+              Оптовые цены
+            </div>
+          </div>
+          <div class="about-company__item">
+            <div class="about-company__item-img">
+              <img src="images/icons/truck.png" alt="">
+            </div>
+            <div class="about-company__item-text">
+              Доставка по городу и краю
+            </div>
+          </div>
+          <div class="about-company__item">
+            <div class="about-company__item-img">
+              <img src="images/icons/briliant.png" alt="">
+            </div>
+            <div class="about-company__item-text">
+              15 лет на рынке
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="news-slider">
+    <div class="container">
+
+      <div class="slider__title">
+        <div class="slider__title-name ">
+          <h2>Новости</h2>
+        </div>
+        <div class="slider__title-link ">
+          <a href="#">Смотреть все</a>
+        </div>
+      </div>
+
+      <div class="news-slider__inner">
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/vegatables.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              «Самое ценное в нашем мире — овощи»
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/news.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              Чувсто вкуса
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/viktory.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              “TDA” установила новый мировой рекорд Гиннесса
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/vegatables.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              «Самое ценное в нашем мире — овощи»
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/news.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              Чувсто вкуса
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="news-slider__item">
+            <div class="news-slider__item-img">
+              <img src="images/products/viktory.png" alt="">
+            </div>
+            <div class="news-slider__item-date">
+              15.12.2021
+            </div>
+            <div class="news-slider__item-name">
+              “TDA” установила новый мировой рекорд Гиннесса
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <img src="images/logo.png" alt="">
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">
+            О компании
+          </div>
+          <div class="footer__col-menu">
+            <ul>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+              <li><a href="#">Политика обработки персональных данных</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">
+            Покупателям
+          </div>
+          <div class="footer__col-menu">
+            <ul>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Как вернуть</a></li>
+              <li><a href="#">Как заказать</a></li>
+              <li><a href="#">Программа лояльности</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Юридическим лицам</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__col footer-contacts">
+          <div class="footer__col-title">
+            Подписаться на рассылку актуальных новостей:
+          </div>
+          <div class="footer__col-email">
+            <input type="text" placeholder="Email">
+            <button class="header__feedback" type="submit">
+              <img src="images/mail.png" alt="">
+              <div>Подписаться</div>
+            </button>
+          </div>
+          <div class="footer__col-title">
+            Заказывайте товары круглосуточно и задавайте вопросы
+          </div>
+          <a href="tel:8 800 123-45-67" class="footer__col-tel">
+            8 800 123-45-67
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copy">
+      <div class="container">
+        <div class="footer__copy-inner">
+          <div class="footer__copy-text">
+            © Интернет-магазин “TDA”
+          </div>
+          <div class="footer__copy-social">
+            <ul>
+              <li><a href="#"><img src="images/icons/twitter.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/facebook.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/vk.png" alt=""></a></li>
+              <li><a href="#"><img src="images/icons/instagramm.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
