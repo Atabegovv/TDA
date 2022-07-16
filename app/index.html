@@ -18,7 +18,7 @@
     <div class="container">
       <div class="header__top">
         <div class="header__logo">
-          <img src="images/logo.png" alt="">
+          <a href="#"><img src="images/logo.png" alt=""></a> 
         </div>
         <div class="header__search">
           <input type="text" placeholder="Поиск">
@@ -31,13 +31,24 @@
           </div>
         </div>
         <div class="header__phone">
-          <div class="header__phone-call">+7 (123) 456-78-90</div>
-          <div class="header__phone-call">+7 (123) 456-78-90</div>
+          <a href="tel:+7 (123) 456-78-90" class="header__phone-call">+7 (123) 456-78-90</a>
+          <a href="tel:+7 (123) 456-78-90" class="header__phone-call">+7 (123) 456-78-90</a>
         </div>
-        <a class="header__feedback" href="mailto:company@mail.com">
+        <a class="header__feedback feedback" href="mailto:company@mail.com">
           <img src="images/mail.png" alt="">
           <div>Написать нам</div>
         </a>
+        <div class="header-btns">
+          <ul>
+            <li><a href="#"><img src="images/icons/user.png" alt=""></a></li>
+            <li><a href="#"><img src="images/icons/file.png" alt=""></a></li>
+            <li class="shoping-bag">
+              <a href="#"><img src="images/icons/shopping-bag-big.png" alt=""></a>
+              <span>2</span>
+            </li>
+            <li class="burger-menu"><a href="#"><img src="images/icons/burger-menu.png" alt=""></a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <nav class="header__menu">
@@ -62,114 +73,184 @@
     </nav>
   </header>
 
-  <!-- <section class="header__slider">
+  <section class="header__slider">
     <div class="container-fluid">
       <div class="header__slider-inner">
         <div class="header__slider-item">
-          <img src="images/products/product1.png" alt="">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
+        </div>
+        <div class="header__slider-item">
+          <div class="header__slider-img">
+            <img src="images/products/product1.png" alt="">
+          </div>
+          <div class="header__slider-content">
+            <div class="header__slider-text">
+              <p>Кетчуп «Томатный „Кубаночка“ 310 г. дойпак 1/20</p>
+            </div>
+            <div class="header__slider-price">
+              <div class="price">
+                <div class="regular-price"><s>55,90 ₽</s></div>
+                <div class="sale-price">42,30 ₽</div>
+              </div>
+              <button class="shoping-bag"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section> -->
-
-  <section class="circle__slider">
-
   </section>
 
-
-
-  <section class="popular-slider">
-    <div class="container">
-
-      <div class="slider__title">
-        <div class="slider__title-name ">
-          <h2>Популярные категории</h2>
-        </div>
-        <a class="slider__title-link" href="#">
-          Смотреть все
-        </a>
-      </div>
-
-      <div class="popular-slider__inner">
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/milk.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Молочная продукция
-          </div>
-        </a>
-
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/berries.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Ягоды
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/vegatables.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Овощи
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/eat.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Мясная продукция
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/milk.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Молочная продукция
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/berries.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Ягоды
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/vegatables.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Овощи
-          </div>
-        </a>
-
-        <a href="#" class="popular-slider__item">
-          <div class="popular-slider__item-img">
-            <img src="images/products/eat.png" alt="">
-          </div>
-          <div class="popular-slider__item-name">
-            Мясная продукция
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-
+  <section></section>
 
   <section class="sale-slider">
     <div class="container">
@@ -178,8 +259,9 @@
         <div class="slider__title-name ">
           <h2>Акционные товары</h2>
         </div>
-        <div class="slider__title-link ">
-          <a href="#">Смотреть все</a>
+        <div class="slider__title-link">
+          <a href="#"> Смотреть все </a>
+          <div class="slider__title-link-line"> </div>
         </div>
       </div>
 
@@ -300,6 +382,99 @@
     </div>
   </section>
 
+
+  <section class="popular-slider">
+    <div class="container">
+
+      <div class="slider__title">
+        <div class="slider__title-name ">
+          <h2>Популярные категории</h2>
+        </div>
+        <div class="slider__title-link">
+          <a href="#"> Смотреть все </a>
+          <div class="slider__title-link-line"> </div>
+        </div>
+      </div>
+
+      <div class="popular-slider__inner">
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/milk.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Молочная продукция
+          </div>
+        </a>
+
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/berries.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Ягоды
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/vegatables.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Овощи
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/eat.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Мясная продукция
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/milk.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Молочная продукция
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/berries.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Ягоды
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/vegatables.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Овощи
+          </div>
+        </a>
+
+        <a href="#" class="popular-slider__item">
+          <div class="popular-slider__item-img">
+            <img src="images/products/eat.png" alt="">
+          </div>
+          <div class="popular-slider__item-name">
+            Мясная продукция
+          </div>
+        </a>
+      </div>
+      
+    </div>
+  </section>  
+
+  
   <section class="about-company">
     <div class="container">
       <div class="about-company__title">
@@ -352,8 +527,9 @@
         <div class="slider__title-name ">
           <h2>Новости</h2>
         </div>
-        <div class="slider__title-link ">
-          <a href="#">Смотреть все</a>
+        <div class="slider__title-link">
+          <a href="#"> Смотреть все </a>
+          <div class="slider__title-link-line"> </div>
         </div>
       </div>
 
@@ -441,15 +617,14 @@
   </section>
 
 
-
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer__col">
-          <img src="images/logo.png" alt="">
+        <div class="footer__col footer-logo">
+          <a href="#"><img src="images/logo.png" alt=""></a> 
         </div>
 
-        <div class="footer__col">
+        <div class="footer__col footer-menu">
           <div class="footer__col-title">
             О компании
           </div>
@@ -463,7 +638,7 @@
           </div>
         </div>
 
-        <div class="footer__col">
+        <div class="footer__col footer-menu">
           <div class="footer__col-title">
             Покупателям
           </div>
@@ -490,7 +665,7 @@
               <div>Подписаться</div>
             </button>
           </div>
-          <div class="footer__col-title">
+          <div class="footer__col-title footer-phone">
             Заказывайте товары круглосуточно и задавайте вопросы
           </div>
           <a href="tel:8 800 123-45-67" class="footer__col-tel">

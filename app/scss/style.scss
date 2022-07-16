@@ -128,10 +128,180 @@
       }
     }
   }
+  &-btns{
+    display: none;
+    li{
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: $white;
+      position: relative;
+      a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      & + li {
+        margin-left: 20px;
+      }
+    }
+    .burger-menu{
+      width: 48px;
+      height: 48px;
+    }
+    .shoping-bag{
+      span{
+        position: absolute;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 1px 5px 0;
+        background-color: $purple;
+        border-radius: 8px;
+        color: #fff;
+        top: 2px;
+        right: 4px;
+      }
+    }
+  }
 }
 
 
 // section header__slider
+.header__slider{
+  padding: 10px 0;
+  background-color: $white;
+  min-height: 250px;
+  
+  .slick-track{
+    padding-bottom: 220px;
+    position: relative;
+  }
+  &-item{
+    max-width: 190px;
+    min-height: 140px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: $shadow;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    &:hover{
+      border-radius: 5px 5px 0 0;
+      .header__slider-content{
+        height: auto;
+        overflow: visible;
+        padding: 20px;
+      }      
+    }
+  }
+  &-img{
+    min-height: 100px;
+    position: relative;
+    img{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-content{
+    max-width: 190px;
+    width: 100%;
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 140px;
+    left: 0px;
+  }
+  &-text{
+    @include p3;
+  }
+  &-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .regular-price{
+      font-size: 15px;
+      line-height: 25px;
+      color: $purple;
+    }
+    .sale-price{
+      @include h4;
+    }
+    .shoping-bag{
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: $white;
+      position: relative;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      &::before{
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/shopping-bag.png);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .slick-arrow {
+    font-size: 0;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $green;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .slick-prev{
+    position: absolute;
+    top: 60px;
+    left: 326px;
+    &::before{
+      content: '';
+      background-image: url(../images/icons/arrow-left.png);
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .slick-next{
+    position: absolute;
+    top: 60px;
+    right: 326px;
+    &::before{
+      content: '';
+      background-image: url(../images/icons/arrow-right.png);
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 
 // section circle__slider
 
@@ -155,6 +325,10 @@
     &-img{
       max-width: 100%;
       height: 190px;
+      img{
+        width: 100%;
+        height: 190px;
+      }
     }
     &-name{
       padding: 20px;
@@ -171,19 +345,16 @@
   &-name{
     @include h2;
   }
-  a{
-    color: $purple;
-  }
   &-link{
     @include p3;
-    position: relative;
-    &::before{
-      content: '';
+    cursor: pointer;
+    a{
+      color: $purple;
+    }
+    &-line{
       width: 100%;
       height: 1px;
       background-color: $green;
-      position: absolute;
-      bottom: 0;
     }
   }
 }
@@ -213,7 +384,7 @@
 
 //section sale-slider
 .sale-slider{
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   &__item{
     display: flex;
     justify-content: space-between;
@@ -457,7 +628,6 @@
     }
     &-email{
       display: flex;
-      justify-content: space-between;
       margin: 15px 0 30px;
       input{
         max-width: 240px;
@@ -466,6 +636,7 @@
         border: none;
         outline: none;
         background-color: $white;
+        margin-right: 30px;
       }
       button{
         border: none;
@@ -480,6 +651,9 @@
     }
   }
   &-contacts{
+    max-width: 460px;
+  }
+  &-phone{
     max-width: 460px;
   }
 }

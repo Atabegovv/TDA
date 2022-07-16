@@ -1,20 +1,226 @@
 // media requests
-@media (max-width: 1320px){
-   
+@media (max-width: 1850px){
+    .header__slider-item{
+        
+    }   
 }
-@media (max-width: 1140px){
+@media (max-width: 1280px){
+    .news-slider__item{
+        max-width: 640px;
+        width: 100%;
+        padding: 0 15px;
+    }
     
 }
-@media (max-width: 960px){
-    
+@media (max-width: 1250px){
+    .sale-slider{
+        .slick-dots{
+            bottom: -50px;
+        }
+        .slick-next,
+        .slick-prev{
+            bottom: -63px;
+        }
+    }
+    .popular-slider__item{
+        max-width: 415px;
+        width: 100px;
+        padding: 0 10px;
+        &-img{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer-contacts{
+        max-width: 300px;        
+    }   
+    .footer__col-email{
+        display: block;
+        button{
+            margin-top: 10px;
+        }
+    } 
+    .header-btns{
+        display: block;
+    }
+    .header__location,
+    .header__phone,
+    .feedback{
+        display: none;
+    }
+}
+@media (max-width: 1090px){
+    .footer-contacts{
+        display: block;
+        max-width: 100%;   
+        margin: 0 auto;    
+        margin-top: 30px; 
+    }   
+    .footer__col-email{
+        display: flex;
+        button{
+            margin-top: 0px;
+        }
+    }
+    .about-company__content{
+        display: block;
+    }
+    .about-company__text{
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 940px){
+    .popular-slider__item{
+        max-width: 470px;
+    }
+}
+@media (max-width: 900px){
+    .header__search{
+        display: none;
+    }
+    .header__menu{
+        display: none;
+    }
+    .sale-slider__item{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .sale-slider__item-img{
+        max-width: 100%;
+        max-height: 350px;
+        margin-bottom: 50px;
+        img{
+            max-height: 350px;
+        }
+    }
+    .sale-slider__item-content{
+        max-width: 100%;
+    }
+    .sale-slider{
+        .slick-arrow,
+        .slick-next,
+        .slick-prev{
+            display: none !important;
+        }
+        .slick-dots{
+            position: relative;
+            margin-top: 10px;
+            li{
+                text-align: center;
+            }
+        }
+    }
+    .news-slider__item{
+        max-width: 900px;
+        width: 100%;
+        padding: 0 5px;
+    }
+    .header__slider{
+        .slick-arrow,
+        .slick-next,
+        .slick-prev{
+            display: none !important;
+        }
+    }
 }
 @media (max-width: 720px){
+    .footer-logo{
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .slider__title{
+        display: block;
+    }
+    .slider__title-link{
+        display: inline-block;
+    }
+}
+@media (max-width: 660px){
+    .about-company__items{
+        display: block;
+    }
+    .about-company__item{
+        margin: 0 auto;
+        & + .about-company__item{
+            margin: 20px auto;
+        }
+    }
+}
+@media (max-width: 620px){
+    .popular-slider__item{
+        max-width: 620px;
+    }
+}
+@media (max-width: 530px){
+    .header-btns{
+        li{
+            display: none;
+        }
+        .burger-menu{
+            display: block;
+        }
+    }
     
 }
-@media (max-width: 540px){
-    
+@media (max-width: 500px){
+    .footer__inner{
+        display: block;
+        text-align: center;
+    }
+    .footer-menu{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer__col{
+        max-width: 100%;
+    }
+    .footer__col-email{
+        display: block;
+        button{
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        input{
+            margin: 0 auto;
+        }
+    }
+    .footer__col-tel{
+        @include h3;
+    }
+    .footer__copy-inner{
+        display: block;
+        text-align: center;
+    }
+    .footer__copy-text{
+        margin-bottom: 20px;
+    }
 }
-
+@media (max-width: 450px){
+    .product-price{
+        display: block;
+    }
+    .content__links{
+        display: block;
+        text-align: center;
+        &-purple{
+            display: block;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &-white{
+            display: block;
+        }
+    }
+}
 
 
 
