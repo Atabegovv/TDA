@@ -167,7 +167,6 @@
   }
 }
 
-
 // section header__slider
 .header__slider{
   padding: 10px 0;
@@ -302,11 +301,6 @@
   }
 }
 
-
-// section circle__slider
-
-
-
 // section popular__slider
 .popular-slider{
   padding: 100px 0;
@@ -380,7 +374,6 @@
     }
   }
 }
-
 
 //section sale-slider
 .sale-slider{
@@ -527,7 +520,6 @@
   }
 }
 
-
 //section about company
 .about-company{
   padding: 100px 0;
@@ -573,7 +565,6 @@
     }
   }
 }
-
 
 //section news-slider
 .news-slider {
@@ -680,6 +671,96 @@
   }
 }
 
+//sidenav&tabs
+.sidenav{
+  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 170px;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+    background-color: #fff;
+    padding: 10px 0;
+
+  &__wrapper{
+    display: flex;
+  }
+  &__aside{
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+    &::before{
+      content: '';
+      height: 100%;
+      width: 1px;
+      background-color: $silver;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .aside-tab{
+    @include h4;
+    margin: 20px 0;
+    padding-right: 65px;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url(../images/icons/down.png);
+      width: 24px;
+      height: 24px;
+      transform: rotate(-90deg);
+      right: 30px;
+    }
+    &:hover{
+      color: $hover-purple;
+    }
+  }
+  .active{
+    color: $purple;
+  }
+  .aside__tab{
+    &-content{
+      padding-left: 50px;
+    }
+    &-title{
+      @include h2;
+      margin-bottom: 30px;
+    }
+    &-item{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .group-list{
+    @include h4;
+    padding: 0 0px 30px 0;
+    max-width: 285px;
+    width: 100%;
+    li{
+      margin-top: 10px;
+    }
+    a{
+      @include p3;
+      font-weight: 400;
+      &:hover{
+        color: $hover-purple;
+      }
+    }
+  }
+  .closebtn{
+    img{
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
 
 
 

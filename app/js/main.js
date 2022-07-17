@@ -123,4 +123,19 @@ $(function () {
   });
 
 
+  //sidenav-tabs
+  $(".aside__tab-content").not(":first").hide();
+  $(".sidenav__wrapper .aside-tab").click(function() {
+    $(".sidenav__wrapper .aside-tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".aside__tab-content").hide().eq($(this).index()).fadeIn()
+  }).eq(0).addClass("active");
+  
 });
+
+//sidenav
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
